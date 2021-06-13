@@ -18,6 +18,8 @@
 
     <h2>A continuación un listado de perfiles</h2>
 
+    <p><a href="insertar.php">Insertar perfil</a></p>
+
     <table border="1">
         <?php
             foreach($lista as $perfil){
