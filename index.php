@@ -34,7 +34,7 @@
                     <td><?= $perfil->precio ?></td>
 
                     <td><a href="editar.php?id=<?=$perfil->id?>">Editar</a></td>
-                    <td><a href="eliminar.phpid=<?=$perfil->id?>">Eliminar</a></td>
+                    <td><a href="eliminar.php?id=<?=$perfil->id?>">Eliminar</a></td>
                 </tr>
                 <?php
             }
