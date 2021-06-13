@@ -3,6 +3,7 @@
     $perfilConexion = new MiPerfilConexion();
 
     $id = $_REQUEST['id'];
+    $editado = $_REQUEST['editado'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +27,14 @@
         }
     ?>
 
+    <?php
+        if(isset($editado)){
+            echo '<p>Perfil editado</p>';
+        }
+    ?>
+
     <form action="recibir_edicion.php" method="GET">
+        <input id="id" name="id" type="hidden" value="<?= $perfil->id ?>"/>
         <label>Nombre<input id="nombre" name="nombre" type="text" value="<?= $perfil->nombre ?>" required/></label>
         <br>
         <label>Apellido<input id="apellido" name="apellido" type="text" value="<?= $perfil->apellido ?>" required/></label>
